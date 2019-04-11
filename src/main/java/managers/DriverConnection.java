@@ -26,34 +26,25 @@ public class DriverConnection {
 			try {
 				System.out.println("will create driver now");
 				driver = new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
-				System.out.println("singleton driver cfeated " +driver.toString());
 			}
 			catch(Exception e) {
-				System.out.println("catching error");
 				e.getStackTrace();
 			}
 		
-			System.out.println("tanu 4 driver");
 		}
 		if (type.contains("sauceLabs")) {
-			System.out.println("SCL start driver");
 			driver = new AndroidDriver<AndroidElement>(
 					new URL("http://testsaavnandroid:0208cf09-abcf-408a-9f03-c7a1efc74d3b@ondemand.saucelabs.com:80/wd/hub"),
 					capabilities);
-			System.out.println("SCL driver URL");
-			System.out.println("sauce labs connected!!!");
 		}
 	}
 
 	public static DriverConnection getDriverInstance(String type, DesiredCapabilities capabilities)
 			throws MalformedURLException {
-		System.out.println("SCL driver instance 2");
 		if(driverInstance == null) {
 			driverInstance = new DriverConnection(type, capabilities);
 		}
-		
-		System.out.println("gotcha driver");
-		return driverInstance;
+				return driverInstance;
 	}
 
 	public AndroidDriver<AndroidElement> getDriver() {

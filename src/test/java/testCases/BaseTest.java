@@ -39,9 +39,6 @@ public class BaseTest {
 
 		// getting data from data file
 		this.userDataFile=userDataFile;
-		//System.out.println("Environment is " + env);
-		//env = Data.get(userDataFile).getEnvironment();
-
 		DriverType deviceType = Data.get(userDataFile).getDeviceType();
 		System.out.println("device Type " + deviceType);
 		DriverManager driverManager = DriverManagerFactory.getManager(deviceType);
@@ -63,7 +60,6 @@ public class BaseTest {
 				driver.quit();
 			}
 
-			// driver = null;
 		} catch (Exception e) {
 			System.out.println("ypooo HomePage");
 			e.printStackTrace();
