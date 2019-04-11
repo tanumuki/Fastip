@@ -1,0 +1,15 @@
+managers/DriverManagerFactory$1.class
+capabilities/Device.class
+capabilities/GetConnectedDevices.class
+managers/DriverConnection.class
+managers/DriverManager.class
+listener/Listeners.class
+enums/DriverType.class
+logger/MyLogger.class
+capabilities/Nexus5XCapabilities.class
+properties/Data.class
+listener/ExtentReporterNG.class
+pageObjects/HomePage.class
+utilities/Util.class
+capabilities/SauceLabsCapabilities.class
+managers/DriverManagerFactory.class

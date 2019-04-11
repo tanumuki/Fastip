@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 5, Time elapsed: 23.312 s <<< FAILURE! - in TestSuite
+init(testCases.VerifyCalculator)  Time elapsed: 8.071 s  <<< FAILURE!
+java.lang.IllegalArgumentException: Can not set io.appium.java_client.android.AndroidElement field pageObjects.HomePage.logo to org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4
+	at testCases.VerifyCalculator.init(VerifyCalculator.java:27)
+

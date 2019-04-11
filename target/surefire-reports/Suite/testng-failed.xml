@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <parameter name="userDataFile" value="src/main/java/properties/device.json"/>
+  <listeners>
+    <listener class-name="listener.Listeners"/>
+    <listener class-name="listener.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="Search  Tests(failed)">
+    <classes>
+      <class name="testCases.VerifyCalculator">
+        <methods>
+          <include name="init"/>
+          <include name="testCalculation"/>
+          <include name="stop"/>
+          <include name="testLengthyBillAmount"/>
+          <include name="setup"/>
+          <include name="testSpecialCharsBillAmount"/>
+          <include name="testNegativeBillAmount"/>
+        </methods>
+      </class> <!-- testCases.VerifyCalculator -->
+    </classes>
+  </test> <!-- Search  Tests(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,10 @@
+{
+"appPath" : "/Users/tanumukherjee/Downloads" ,
+"deviceType" : "ANDROID_DEVICE",
+"billAmount" :"100" ,
+"tipPercentage" :"15",
+"lengthyBillAmount":"23232323232323232322222222222", 
+"negativeBillAmount": "-123",
+"billAmountWithSpace" :" " ,
+"billAmountWithSpecialChars" : "!@#$%"
+}
